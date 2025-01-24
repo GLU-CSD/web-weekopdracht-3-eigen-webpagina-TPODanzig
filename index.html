@@ -8,10 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="CDN library url"></script> -->
     <script defer src="main.js"></script>
-    <img assets\KajKaart.png>
+
+    <style>
+        .button {
+            border: black;
+            border-radius: 10px;
+            border-width: thick;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+
+          .image{
+            size: 200px;
+          }
+          
+          .button1 {background-color: rgb(80, 50, 5);}
+          .button2 {background-color: rgb(90, 65, 10);}
+          .button3 {background-color: rgb(100, 50, 25);}
+          .button4 {background-color: rgb(110, 45, 30);}
+        </style>
 </head>
 <body>
-    <h1>List of places where Kaj touched people</h1>
-    <img src="assets/KajKaart.png" alt="Map of Kaj safety"style="width:550px;height:550px;">
+<h1> Memorial page of Nokeo </h1>
+<button onclick="Button1()" class="button button1">Backstory</button>
+<button onclick="Button2()" class="button button2">Death</button>
+<button onclick="Button3()" class="button button3">Aftermath</button>
+
+<p id="Text"></p>
+
+<img src="assets/Dehrya.png" class="image" alt="Picure of Dehrya" width="400" height="500"> 
+<img src="assets/Nokeo1.png" alt="Picure of Nokeo">
+<img src="assets/Nokeo2.png" alt="Another picture of Nokeo">
+
+<script>
+function Button1(){
+document.getElementById("Text").innerHTML = "Nokeo was een owlin geboren in een vissers hut, hij woonde voor een groot deel van zijn leven in die hut, maar uiteindelijk besloot hij dat hij op avontuur wou, en ging het bos ven Nvemdir in. In dit bos kwam hij een biblioteek tegen waar een druid genaamd Dehrya tegen die hem besloot magie te leren. De druid werd een moeder viguur voor Nokeo, en hij heeft ongeveer een jaar door gewoond, tot ze besloten de biblioteek achter te laten en naar het dichte dorp te gaan."
+}
+
+function Button2(){
+document.getElementById("Text").innerHTML = "Dehrya, Nokeo, en 3 andere die ze onderweg waren tegen gekomen werden gevraagd door de burgermeester om een verlaten draken bunker te onderzoeken, en te kijken of er ongeweste inwoners waren. Het dorp werd geterroriseerd door een draak die een dreigement werd voor de inwoners. De groep ging dus naar de bunker, waar ze met veel dingen hadden moeten vechten, en diep daar binnen vond een uitgeputte Nokeo een Ketel met een rode vloestof en een lader erin, Nokeo besloot het te drinken, tot de schok van de groep die het snel uit zijn maag zagen druipen. De vloestof was een sterk gif die Nokeo vanbinnen compleet had verbrand."
+}
+
+function Button3(){
+document.getElementById("Text").innerHTML = "Na dat Nokeo was gestorven had de groep een dag van herdenking, waardoor de burgemeester, die hun nooit had zien terug keren, dacht dat ze in de problemen waren, en stuurde 2 nieuwe mensen om ze te helpen. De hervormde groep kwam uiteindelijk samen om de Draak te confronteren, maar door een van de nieuwe twee mensen besloten ze de draak te helpen en namen het dorp over. nadat ze dat hadden gedaan hebben ze veel veranderingen gemaakt, waaronder een groot standbeeld van Nokeo waaraan ze hem altijd kunnen herinderen."
+}
+</script>
 </body>
 </html>
